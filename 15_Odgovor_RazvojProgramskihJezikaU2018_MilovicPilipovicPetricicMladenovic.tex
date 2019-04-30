@@ -1,0 +1,299 @@
+
+
+ % !TEX encoding = UTF-8 Unicode
+
+\documentclass[a4paper]{report}
+
+\usepackage[T2A]{fontenc} % enable Cyrillic fonts
+\usepackage[utf8x,utf8]{inputenc} % make weird characters work
+\usepackage[serbian]{babel}
+%\usepackage[english,serbianc]{babel}
+\usepackage{amssymb}
+
+\usepackage{color}
+\usepackage{url}
+\usepackage[unicode]{hyperref}
+\hypersetup{colorlinks,citecolor=green,filecolor=green,linkcolor=blue,urlcolor=blue}
+
+\newcommand{\odgovor}[1]{\textcolor{blue}{#1}}
+
+\begin{document}
+
+\title{Razvoj programskih jezika u 2018.\\ \small{Marko Petričić, Dušan Milović, Dušan Pilipović, Vido Mladenović}}
+
+\maketitle
+
+\tableofcontents
+ 
+\chapter{Recenzent \odgovor{--- ocena: 5} }
+
+
+\section{O čemu rad govori?}
+% Напишете један кратак пасус у којим ћете својим речима препричати суштину рада (и тиме показати да сте рад пажљиво прочитали и разумели). Обим од 200 до 400 карактера.
+
+Rad prezentuje razvoj programskih jezika i njihovo stanje u industriji, tokom prethodnih godina, kao i planirano stanje u bliskoj budućnosti. Objašnjeni su asptekti industrije, pomoću kojih se prepoznaju trendovi i time olakšava izbor jezika za željeni projekat. Prikazano je kakav uticaj imaju velike kompanije na popularnost jezika, kao i uticaj sve više aktuelnih oblasti, poput mašinskog učenja i analize velike količine podataka. Slikovito su prikazane popularnosti jezika kako uopšteno, tako i u određenim industrijama. Posvećena je pažnja i novijim jezicima, poput sve popularnijeg jezika Go. Osvrnuli su se na fenomen popularnosti progresivnih web aplikacija zbog njihove jednostavne upotrebe. Naravno tu su i blockchain tehnologije i low-code razvoj, čija se sve veća primena očekuje narednih godina. Posvećuje se pažnja jeziku Kotlin,  pogodnosti u odnosu na Javu. Zatim kako Javascript zadržava najveću korišćenost zahvaljujući svojim framework-ovima.
+
+\section{Krupne primedbe i sugestije}
+% Напишете своја запажања и конструктивне идеје шта у раду недостаје и шта би требало да се промени-измени-дода-одузме да би рад био квалитетнији.
+
+Rad je celovit i kompaktan. Sve je dobro objašnjeno, pa zbog toga i prevelik broj strana. Izlazi iz željenog okvira od 12-13 strana.
+Sugestija je da se proba konciznije napisati pasusi. Ne moraju biti detaljni. Mada razumem da opet neće upasti u željeni kalup, zbog velikog broja slika. 
+Na primer poređenja jezika Kotlin i Java. Recimo koncept ''coroutine''. Možda treba razmisliti o jednostavnijem uvođenju pojma i navođenje reference za detaljniji uvid čitaoca u pojam, jer objašnjavanje nije suština projekta.
+\odgovor{Ova sugestija je prihvaćena, dodata je referenca za pojam ''coroutine''.}
+Druga sugestija bi bile tabele, imate ih u obliku slika na strani 20. Možda bolje zbog uslova projekta o obaveznoj tabeli, prepisati ih u latex tabele.
+\odgovor{Ova sugestija je prihvaćena, dodate su tabele.}
+Takođe literatura se sadrži od linkova ka stranicama i artiklima. Moguće je formatirati u .bib fajlu lepši prikaz, da se vidi naslov rada i autor ili ime sajta.
+\odgovor{Ova sugestija je prihvaćena ispravljen je prikaz referenci.}
+
+Upitno je ubacivanje koda, ne koristi se paket listing koliko vidim iz fajla .pdf. Nemam .tex fajl pa nisam siguran. To treba ispraviti da bi moglo da se referiše na kod.
+\odgovor{Ova sugestija je prihvaćena dodat je paket listing.}
+
+Dodatno, smatram da bi bilo lepše završiti rad sekcijom zaključak. Ako je to izvodljivo, pošto je dosta tema pokriveno i svakako nije jednostavno izvući neku opštu crtu.
+\odgovor{Ova sugestija je prihvaćena, dodat je zaključak.}
+
+\section{Sitne primedbe}
+% Напишете своја запажања на тему штампарских-стилских-језичких грешки
+
+Stilski je dobro napisano, razumljivo je i čitko.
+
+Imamo par štamparskih grešaka sa slovom đ, neke koje sam uočio: `odredenom' na 5. str. linija 4, `Medu' 13. str. drugi pasus za blockchain tehnologije, `izraduju' 13. str 2. linija o low-code razvoju, `prilagodeni' 13. str. poslednja linija.
+
+Pojava velikog slova i : 13. str. linija 4 pasusa low-code razvoj , 15. str. linija 5 teksta.
+
+Par loše uvedenih reči : `šhell' 6. str. linija 8 , `tehinički' 13.str prva rečenica o low-code razvoju, `mongo' 13. str. poslednja rečenica, `čoroutine"` na tri mesta u paasusu o Kotilin courutines, `šmeća''` 17. str. linija teksta 12, `defer''` dva puta 18. str. drugi pasus nedostaje navodnik.
+
+Dodatno, naslov ''Razvoj Programskih Jezika 2018'' bi trebalo ''Razvoj programskih jezika 2018'.'
+
+\odgovor{Ova sugestija je prihvaćena, ispravljene su štamparske greške.}
+
+
+\section{Provera sadržajnosti i forme seminarskog rada}
+% Oдговорите на следећа питања --- уз сваки одговор дати и образложење
+
+\begin{enumerate}
+\item Da li rad dobro odgovara na zadatu temu?\\
+
+Rad je apsolutno adekvatan temi. Opširno upućuje čitaoca u tematiku.
+
+\item Da li je nešto važno propušteno?\\
+
+Ne bih rekao da ima propusta, veoma pokriven rad kako tekstom tako i dobro popraćen slikama.
+
+\item Da li ima suštinskih grešaka i propusta?\\
+
+Verovatno previše tema za ovakav seminarski rad, pa otuda nešto veći broj stranica.
+
+\item Da li je naslov rada dobro izabran?\\
+
+Naslov je adekvatan, rad pravi presek stanja razvoja programskih jezika u 2018. godini ,osvrćući se na raniji period i gledajući blisku budućnost.
+
+\item Da li sažetak sadrži prave podatke o radu?\\
+
+Sažetak odgovara daljem tekstu. S obzirom da rad pokriva dosta stvari, opšti sažetak je dobar.
+
+\item Da li je rad lak-težak za čitanje?\\
+
+Rad je lak za čitanje, autori su sve lepo i detaljno objasnili. Pristupačno je i ljudima koji nisu upoznati toliko sa tematikom.
+
+\item Da li je za razumevanje teksta potrebno predznanje i u kolikoj meri?\\
+
+Mišljenja sam da nije potrebno, jer je lepo objašnjeno sve i potkrpljeno slikama koje olakšavaju razumevanje.
+
+\item Da li je u radu navedena odgovarajuća literatura?\\
+
+Literatura je odgovarajuća, nisam našao da je sporna. Treba je lepše prikazati u poglavlju literatura.
+\odgovor{Ova sugestija je prihvaćena. Izmenjeno je prikazivanje literatura.}
+
+\item Da li su u radu reference korektno navedene?\\
+
+Referiše se na slike vezane za tekst, dok reference ka uključenoj navedenoj literaturi nisam video.
+\odgovor{Ova sugestija je prihvaćena, dodate su reference u tekstu.}
+
+\item Da li je struktura rada adekvatna?\\
+
+Dobra je struktura rada i u dobrom redosledu, što utiče na razumevanje. Predložio sam već eventualno dodavanje zaključka.
+\odgovor{Ova sugestija je prihvaćena, dodat je zaključak.}
+\item Da li rad sadrži sve elemente propisane uslovom seminarskog rada (slike, tabele, broj strana...)?\\
+
+Slika ima dosta i referiše se na njih.
+Tabela ima ali u obliku slika. Predloženo da se prebace u latex tabele.
+Broj strana od 21 je svakako prekoračenje propisanih uslova od 12-13 strana sa sve dodatkom.
+Broj literature je zavodoljen.
+Upitno je ubacivanje koda, ne koristi se paket listing koliko vidim iz fajla .pdf, nemam .tex fajl pa nisam siguran.
+\odgovor{Ova sugestija je prihvaćena. Dodate su tabele, smanjen je broj strana, dodat je paket za prikaz koda.}
+
+\item Da li su slike i tabele funkcionalne i adekvatne?\\
+
+Slike i tabele su adekvatne, čine razumljivijim rad.
+
+\end{enumerate}
+
+\section{Ocenite sebe}
+% Napišite koliko ste upućeni u oblast koju recenzirate: 
+% a) ekspert u datoj oblasti
+% b) veoma upućeni u oblast
+% c) srednje upućeni
+% d) malo upućeni 
+% e) skoro neupućeni
+% f) potpuno neupućeni
+% Obrazložite svoju odluku
+
+Pre čitanja rada mislio sam da sam srednje upućen, ali nakon čitanja shvatam da sam bio malo i delimično upućen.
+Tako da mi je bilo zanimljivo saznati o ovoj temi na način kako su autori to predstavili.
+
+
+\chapter{Recenzent \odgovor{--- ocena: 4} }
+
+
+\section{O čemu rad govori?}
+% Напишете један кратак пасус у којим ћете својим речима препричати суштину рада (и тиме показати да сте рад пажљиво прочитали и разумели). Обим од 200 до 400 карактера.
+U datom radu autori su pisali o razvoju programskih jezika i trendovima u programiranju kao i o nekim trenutno popularnim jezicima. U prvom delu rada su diskutovali o programskim jezicima koji se danas najviše koriste, kako na to utiču novac, velike kompanije i broj projekata koji se trenutno rade u tim programskim jezicima. U drugom delu su govorili o tehnologijama koje se sve više koristei, a u trećem delu o dva programska jezika koja trenutno doživljavaju veliku popularnost.
+
+\section{Krupne primedbe i sugestije}
+% Напишете своја запажања и конструктивне идеје шта у раду недостаје и шта би требало да се промени-измени-дода-одузме да би рад био квалитетнији.
+Mislim da bi rad trebalo napisati ispočetka i restrutkuirati. Ima dobrih delova u kojima su odgovorili na temu, ali u većem delu rada nisu bili fokusirani na temu rada, a to je razvoj programskih jezika u 2018-oj i poredjenje tih novih jezika sa već postojećim.
+\odgovor{Ova sugestija nije prihvaćena jer rad govori o razvoju, a ne o nastanku novih jezika u 2018-oj godini.}
+Takodje sama struktura rada nije dobra, jer se u nekoliko poglavlja dešava da se započne priča o jednoj temi i da se onda započne druga tema pa onda ona prva započeta tema biva nezavršena. Sama podela rada na delove koji se odnose na ulogu industrije u diktiranju i razvijanja trendova u programskim jezicima,  zatim deo o popularnosti jezika i novim trendovima kao i deo o dva popularna programska jezika jesu dobar odgovor na temu, ali nisu dovoljno razradjeni.
+\odgovor{Ova sugestija je delimično prihvaćena. Pojedine teme koje su navedene u sekcijama 2.1.2, 4.2, 4.3 i programski jezik Go u sekciji 5 su uklonjene, jer smo saglasni sa tim da nisu dovoljno opširno obrađene, međutim ovaj rad nije vezan konkretno za neku od navedenih tema već za razvoj programskih jezika u 2018-oj godini celokupno, stoga smatramo da bi bilo nepotrebno dublje obrađivati svaku od navedenih tema pojedinačno. Cilj nam je da čitaoca upoznamo sa novim tehnologijama i novim dešavanjima u svetu programiranja, ali ne i da mu detaljno objašnjavamo ista. Dakle, na osnovu našeg rada, čitaoca ćemo upoznati sa svim aktuelnim dešavanjima, a na njemu je da ih detaljnije proučava. Sa druge strane, određene teme je neophodno pomenuti u radu sa ovakvom temom, ali nam ograničenje koje se tiče broja strana ne dozvoljava da ih dublje obrađujemo, a recenzent je u nekoj od narednih primedba naveo prekoračen broj strana kao jedan od problema. }
+U delu u kojem se govori o Python-u spominje se zavisnost BDP-a država i popularnosti samog Python-a što nema ni smisla niti je vezano za temu rada. 
+\odgovor{Primedba je prihvaćena. Ovaj deo, u kome se upoređuje razvoj programskih jezika u ekonomski razvijenim i nerazvijenim zemljama, je uklonjen iz rada, shodno tome ukonjene su i slike koje se odnose na ovaj deo teksta (slike 4 i 5).}
+Što se tiče tehničkih delova rada i tu ima puno problema. Rad ima duplo više strana nego što je dozvoljeno, indeksiranje stranica počinje od broja 2.
+\odgovor{Primedba je prihvaćena. Broj strana je smanjen jer su uklonjeni neki delovi rada, koji su navedeni u prethodnim odgovorima i rad počinje od broja 1.}
+Odredjene slike nisu dobre jer se ne vidi šta je na njima.
+\odgovor{Iako nisu navedene konkretne slike koje nisu dovoljno razumljive, potrudili smo se da malo bolje opišemo slike za koje smatramo da predstavljaju potencijalni problem i izbacili smo slike koje smartamo da nisu potrebne.} 
+Još jedna od obaveznih stvari nedostaje u radu, a to su tabele.
+\odgovor{Primedba je prihvaćena. Uvedene su tabele u poglavlju 5, tamo gde su bile slike.}
+Primeri koda nisu navedeni u tekstu korišćenjem potrebnog paketa, a na njih se nigde i ne referiše u tekstu.
+\odgovor{Primedba je delimično prihvaćena. Izmenjen je paket za prikaz koda, a iz teksta se može videti na koji listing se referiše. }
+
+\section{Sitne primedbe}
+% Напишете своја запажања на тему штампарских-стилских-језичких грешки
+U tekstu postoji veliki broj grešaka, kako štamparskih(primer strana 13  Neke prednosti progrsivnih, strana 15 pretposlednji red teksta, piše jedanog umesto jednog, strana 14 Čoroutinešu , strana 17  upravljanje šmeća, strana 21 fron-end), tako i jezičkih, kao što su rečenic koje nemaju smisla(primer strana  5 To je jedini najveci razlog zasto se programeri sve vise opredeljuju za Python, strana 16 Zašto je sistemskog nivoa jezik tako popularan? ,strana 17  kao da je dobro nešto dodato, strana 17  upravljanje šmeća, strana 21 Unos korisnika programerski kod ili tekst u ćelije na fron-end strani). Na strani 14 u rečenici  `Još jedan novitet koji uvodi Kotlin jesu čoroutine”' 'zbog navodnika umesto coroutine se pojavilo čoroutine jer nisu escape navodnike. Ta greška se pojavljuje svuda u tekstu gde se pojavljuje reč coroutine. Sličan problem je i sa ključnom reči defer na strani 18. Takodje u radu ima problema vezanog za korišćenje stranih reči je se u radu pojavljuju i oblik ”Python-a” i oblik ”Pythona”. U delu u kojem se spominje Facebook, Facebook je napisano malim slovima iako treba velikim jer je to ime kompanije.
+\odgovor{Sve navedene primedbe su prihvaćene i potrudili smo se da ispravimo sve slične greške koje su bile prisutne.}
+\section{Provera sadržajnosti i forme seminarskog rada}
+% Oдговорите на следећа питања --- уз сваки одговор дати и образложење
+
+\begin{enumerate}
+\item Da li rad dobro odgovara na zadatu temu?\\
+Delimično, kao što sam naveo u delu krupne primedbe i sugestije. Ima delova koji odgovaraju na temu, ali i delova koji ne odgovaraju ili nemaju smisla.
+\item Da li je nešto važno propušteno?\\
+Kao što je navedeno u drugoj sekciji, nije dovoljno pažnje posvećenoj samoj temi rada.
+\item Da li ima suštinskih grešaka i propusta?\\
+Ima, veliki deo je naveden u prethodne dve sekcije.
+\item Da li je naslov rada dobro izabran?\\
+U naslov bi mogao da se doda predlog u, tako da naslov bude Razvoj programskih jezika u 2018., ovako Razvoj Programskih Jezika 2018 i nema baš smisla.
+
+\odgovor{Primedba je prihvaćena}
+\item Da li sažetak sadrži prave podatke o radu?\\
+Da, sažetak je dobro napisan i sadrži informacije o temama koje su obradjene u radu.
+\item Da li je rad lak-težak za čitanje?\\
+Rad nije težak za čitanje i razumevanje jer sama tema nije komplikovana, ali rad stilski nije dobro napisan pa to pravi probleme.
+\item Da li je za razumevanje teksta potrebno predznanje i u kolikoj meri?\\
+Potrebno je minimalno predznanje vezano za same programske jezike kako bi se razumeo razvoj novih jezika i kako se oni razlikuju od starijih programskih jezika.
+\item Da li je u radu navedena odgovarajuća literatura?\\
+Osim referenci prema sajtovima sa različitim tekstovima ili dokumentacijom, nema referenci prema nekim knjigama ili naučnim časopisim.
+\odgovor{Primedba nije prihvaćena. Nismo pronašli knjigu (naučni rad) koja bi nam značila za pisanje seminarskog rada.}
+\item Da li su u radu reference korektno navedene?\\
+U tekstu se nigde ne navodi koji deo teksta referiše na koju referencu. Samo su na kraju navedeni sajtovi sa kojih su preuzimani tekstovi i podaci. Na strani 19 u tekstu se pojavljuje link sajta, pretpostavljam da nije dobro link-ovano.
+\odgovor{Primedba je prihvaćena. Dodate su reference u tekstu odakle je taj tekst preuzet.}
+\item Da li je struktura rada adekvatna?\\
+Kao što je navedeno u drugom i trećem pasusu, struktura rada nije dobra.
+\item Da li rad sadrži sve elemente propisane uslovom seminarskog rada (slike, tabele, broj strana...)?\\
+Rad sadrži samo slike, tabela nema. Velika mana ovog rada je što ima 22 strane, što je duplo više nego što je dozvoljeno.
+\odgovor{Primedba je prihvaćena. Uvedene su tabele u poglavlju 5 i smanjen je broj strana.}
+\item Da li su slike i tabele funkcionalne i adekvatne?\\
+Kada se pritisne na broj koji predstavlja referencu na sliku rad se spusti stranu ispod slike. (Nisam siguran da li je to greška autora ili do Latex-a).U trećoj oblasti u tekstu ne postoje reference na slike niti postoje opisi slika. Isti slučaj je i sa nekoliko slika i u četvrtoj i petoj oblasti. Što se tiče samih slika, neke slike su mogle da budu veće rezolucije jer se na njima ne vidi sve jasno.
+\odgovor{Primedba je delimično prihvaćena. Dotate su reference slikama kojima to fali, uklonjene su nejasne slike.}
+\end{enumerate}
+
+\section{Ocenite sebe}
+% Napišite koliko ste upućeni u oblast koju recenzirate: 
+% a) ekspert u datoj oblasti
+% b) veoma upućeni u oblast
+% c) srednje upućeni
+% d) malo upućeni 
+% e) skoro neupućeni
+% f) potpuno neupućeni
+% Obrazložite svoju odluku
+Srednje upućen. Čuo sam za veliki broj jezika koji su navedeni u tekstu, radio sam u nekima i upoznat sam delimično sa njihovom popularnošću, ali nisam zalazio u to koliko projekata ima u kojim programskim jezicima i istraživanjima na Github-u i Stackoverflow-u.
+
+
+\chapter{Recenzent \odgovor{--- ocena: 4} }
+
+
+\section{O čemu rad govori?}
+Tema rada je razvoj programskih jezika u poslednjih par godina, sa posebnim fokusom na 2018. godinu. Autori su se osvrnuli na razvijanje novih tehnologija i popularnost određenih tehnologija i programskih jezika u poslednje vreme. Obradili su faktore koji mogu uticati na rast ili pad popularnosti određenog jezika i prokomentarisali su trenutno stanje u industriji.
+
+\section{Krupne primedbe i sugestije}
+\label{sec:krupno}
+Glavna primedba jeste kvalitet samog rada. Ako se u obzir uzme tema rada, autori su najmanje vremena posvetili baveći se konkretnim programskim jezicima koji su se razvijali u poslednje vreme i njihovim poređenjem sa drugim jezicima. Sam rad je nestruktuiran, u istom poglavlju se neretko otvara određena tema koja se ostavi nedorečena i nakon toga se u istom poglavlju započinje potpuno odvojena tema i celina, takođe neretko ostavljena nedorečena i nerazrađena. 
+\odgovor{Ova sugestija je delimično prihvaćena. Pojedine teme koje su navedene u sekcijama 2.1.2, 4.2, 4.3 i programski jezik Go u sekciji 5 su uklonjene, jer smo saglasni sa tim da nisu dovoljno opširno obrađene, međutim ovaj rad nije vezan konkretno za neku od navedenih teme već za razvoj programskih jezika u 2018-oj godini celokupno, stoga smatramo da bi bilo nepotrebno dublje obrađivati svaku od navedenih tema pojedinačno. Cilj nam je da čitaoca upoznamo sa navih tehnologijama i novim dešavanjima u svetu programiranja koja su uticala na razvoj programskih jezika, ali ne i da mu detaljno objašnjavamo ista. Dakle, na osnovu našeg rada, čitaoca ćemo upoznati sa svim aktuelnim dešavanjima, a na njemu je da ih detaljnije proučava. Sa druge strane, određene teme je neophodno pomenuti u radu sa ovakvom temom, ali nam ograničenje koje se tiče broja strana ne dozvoljava da ih dublje obrađujemo, a recenzent je u nekoj od narednih primedba naveo prekoračen broj strana kao jedan od problema. }
+Mnoštvo stilskih, pravopisnih i gramatičkih grešaka odaje utisak neposvećenosti radu, uz dodatak lošeg formatiranja u pojedinim delovima. 
+\odgovor{Ova primedba je prihvaćena. Potrudili smo se da ispravimo svaku od stilskih, provopisnih i gramatičkih grešaka.}
+Idejno, podela rada na segmente koji će se baviti ulogom industrije u razvoju novina u programskim jezicima, osvrt na popularnost novih i postojećih jezika kao i poglavlje o trendovima i novitetima deluje kao jasan odgovor na temu, međutim nijedna od tih celina nije u potpunosti obrađena na način na koji je to bilo potrebno uraditi, počevši od toga da autori ''skaču'' s teme na temu unutar jednog pasusa, ne završavaju celine, ubacuju mnoštvo nepotrebnog teksta koji je neretko gramatički neispravan ili čak besmislen (npr. rečenica \textit{''Novac igra veliku ulogu u našim životima, medjutim stanje se neće drastično promeniti u odnosu na izbor tehnologije.''}) i većinski se u podeljenim celinama ne bave temama koje su vezane za sam rad, već navode određene činjenice i trendove koji u svojoj suštini imaju povezanost sa programskim jezicima i njihovim razvojem, ali ili nisu krucijalne za isti ili ta povezanost ni na koji način nije objašnjena.
+\odgovor{Primedba koja se odnosi na navedenu rečenicu je prihvaćena i rečenica je preformulisana i sad glasi: \textit{''Novac igra veliku ulogu u našim životima, medjutim naše finansijsko stanje ne zavisi od izbora tehnologije koju ćemo koristiti.''}). Potrebno je naglasiti da ova rečenica dobija svoj puni smisao u kombinaciji sa rečenicama koje su navedene pre nje i nakon nje. Kao što je primećeno, rad se zasniva na činjenicama, a ne na pretpostavkama, što smatramo da bi trebalo da bude pozitivna strana ovog rada. Sa druge strane, trendovi se spominju jer oni najvećom merom utiču na popularnost određenih programskih jezika, što stvara veću zajednicu, pa samim tim i veću tendenciju da se neki programski jezik brže razvije. Iz tog razloga smatramo da trendovi igraju jednu od najvažnijih uloga u razvoju programskih jezika.}
+Nisu ispoštovana osnovna pravila data za pisanje rada kao što su broj strana, povezivanje referenci i slično. 
+\odgovor{Ova primedba je prihvaćena. Smanjili smo broj strana rada i sredili reference.}
+Kako sam tekst odmiče, navedene greške su sve uočljivije i brojnije, a takođe se javljaju i dodatni propusti prilikom formatiranja. Svako pojedinačno poglavlje može se zasebno opisati u odnosu na svoje propuste, pa smatram da bi preopširno bilo posvećivati se istim, tako da glavni utisak samog rada ostaje nedorečenost, neposvećenost temi i nerazađenost, kako stilski, pravopisno, gramatički tako i tematski. \par Glavna sugestija bila bi ponovno pisanje rada, uz bolje planiranje same strukture i celina koje će biti obuhvaćene. Potrebno je bolje razmisliti o tome šta ova tema obuhvata i detaljnije se posvetiti programskim jezicima i njihovom razvoju. Posebno obratiti pažnju na greške koje se u radu javljaju i korigovati ih, kako čitalac ne bi imao utisak da čita veliku količinu teksta koja nije struktuirana, međusobno povezana i napisana u brzini bez proveravanja napisanog teksta i ispravljanje što sitnih grešaka prilikom kucanja, što krupnijih stilskih i gramatičkih propusta.
+\odgovor{Ova primedba je delimično prihvaćena ispravljene su sitne greške i izbačen je suvišan deo.}
+
+\section{Sitne primedbe}
+\label{sec:sitno}
+Za početak, biće navedene primedbe koje su vezane za nepoštvanje šablona koji je dat za izradu rada. Kao što je već navedeno u prethodnoj sekciji, broj strana premašuje zadata ograničenja. Reference u literaturi nisu povezane sa odgovarajućim delovima teksta. Sam rad počinje stranom 2 umesto stranom 1. Svaka referenca u sadržaju, kao i svaka referenca ka određenoj slici ne vodi ka odgovarajućem mestu u radu. U šablonu je navedeno obavezno pojavljivanje makar jedne tabele i reference ka istoj, što se u ovom radu ne nalazi. U sadržaju ne postoje podsekcije. Umesto da se negde u tekstu referiše na sliku, postoji više pojavljivanja \textit{''Slika br\_slike''} kao zasebne rečenice u radu. Delovi koda se ne navode na način na koji su u radu navedeni, u šablonu postoji eksplicitno uputstvo za navođenje koda. \par Osvrnućemo se na još neke od stilskih propusta samog rada, kao i na delove rada u kojima formatiranje nije odrađeno u skladu sa zahtevima. Nemali broj puta se javljaju određene nekonzistentnosti, poput pisanja \textit{''veb''} zajedno sa \textit{''web''}. Rad je pisan latiničnim pismom, međutim karakter ''đ'' nije iskorišćen, već je umesto njega korišćeno ''dj''. Rečenice poput \textit{''Za veb aplikacije pored .Net koriste se dosta Node.Js.''} potrebno je ili preformatirati i objasniti, ili u potpunosti izbaciti iz rada. Na jednom mestu se spominje sintagma \textit{''jedini najveći''}, što je neispravno, najveći ukazuje na to da postoji još nekolicina istih pojmova koji su ''manji'' od ovog, dok jedini ukazuje na potpuno suprotnu stvar. Prilikom navođenja imena neke od biblioteka ili programskog jezika u istom pasusu možemo videti kako oblik \textit{''Python-a''}, tako i oblik \textit{''Pythona''}, potrebno je odlučiti se za jedan oblik i isti koristiti tokom celog pisanja rada. Skraćenice poput ''tj.'' se pišu sa tačkom i nakon zareza. Nigde ne postoji naznaka da je započeta sekcija o programskom jeziku Python, ako se izuzme podebljan naziv samog programskog jezika unutar druge sekcije. Takođe, u istom odeljku nakon nabrajanja karakteristika jezika Python vraća se na temu koja ponovo nema povezanosti sa samim jezikom. Takođe, nije tačno da se R ne koristi ni za šta drugo - naime, to je jedan od najkorišćenijih skript jezika korišćenih za statistiku i statističke proračune. Engleski pojmovi i koncepti koji se navode pod navodnicima unutar rada nigde nisu objašnjeni. Neke od slika su previše sitne i zbijene, pa stoga i nečitljive. Nakon jedne slike i jednog pasusa, ostatak strane 11 ostavljen je prazan. U sekciji 4.1, 4.2 i 4.3 ne spominje se nijedan programski jezik. U drugoj polovini rada može se videti pojavljivanje velikog slova ''I'' umesto malog. Izbaciti ili objasniti upite koji su navedeni na stranama 19 i 20, jer su potpuno nevezani za programiranje u Jupyter Notebook-u.
+\odgovor{Ova primedba je prihvaćena. Sekcije 4.2 i 4.3 su izbačene, a u sekciji 4.1 je navedeno da je razvoj PWA prouzrokovao razvoj jezika koji se koriste za izradu web aplikacija.}
+\par Naredna rečenica biće izdvojena kao primer za dve stvari: \textit{''U poredjenju sa razvijenim zemljama po prihodima, na narednoj slici 5 možemo videti kako se kreće razvoj Pythona u ostalim zemljama, pa možda je to i razlog zašto nisu medju zemljama sa većim prihodima.''}. Prvo na šta je potrebno skrenuti pažnju jeste nepravilan red reči u rečenici. Drugi, možda i veći problem jeste nemarnost. Naime, ovom rečenicom autori ukazuju na to da zemlje sa manjim prihodima imaju manje prihode iz razloga što ne koriste jezik Python, što nije politički korektno i apsolutno neprimereno za navođenje u ovakvom radu. 
+\odgovor{Ova primedba je prihvaćena i navedini deo je izbačen iz rada, kao i slike koje se odnose na taj deo teksta (slika 4 i 5)}\par
+Kao reprezentativan primer nemarnosti pisanja ovog rada može se navesti sekcija 5, čiji je naslov \textit{''Dva novija jezika koja smo izdvojili''}, dok prva rečenica navedene sekcije glasi \textit{''Ovu sekciju smo izdvojili da bismo vas bolje upoznali sa tri jezika vrednih pomena.''}
+\odgovor{Ova primedba je prihvaćena. Izmenjena je čitava sekcija.}
+
+\section{Provera sadržajnosti i forme seminarskog rada}
+
+\begin{enumerate}
+\item Da li rad dobro odgovara na zadatu temu?\par
+Ne u potpunosti. Autori su se dotakli zadate teme, ali na tome se svaki odgovor na temu završava. Previše je pažnje posvećeno opširnom objašnjavanju koncepata koji za samu temu nisu dovoljno vezani, dok je o programskim jezicima i njihovom razvoju poslednjih godina posvećeno jako malo pažnje.
+\item Da li je nešto važno propušteno?\par
+Da, potrebno je posvetiti se samim programskim jezicima, što je i tema ovog rada. Nije dovoljno navesti dva do tri jezika uz kratko osvrtanje na njihove karakteristike. Potrebno je porediti te programske jezike sa jezicima koji su ranije bili korišćeni umesto njih, navesti zbog čega je jednima porasla a drugima opala popularnost i slično.
+\item Da li ima suštinskih grešaka i propusta?\par
+Sve suštinske greške i propusti navedeni su u sekcijama \ref{sec:krupno} i \ref{sec:sitno}.
+\item Da li je naslov rada dobro izabran?\par
+Ne. Naslov rada glasi \textit{''Razvoj Programskih Jezika 2018''}, što ukoliko se naglas pročita zvuči besmisleno. Potrebno je korigovati naslov, ili dodati da je reč o razvoju programskih jezika u poslednjih par godina sa posebnim fokusom na 2018. godinu, ili nešto slično.
+\odgovor{Ova primedba je delimično prihvaćena, naslov je promenjen.}
+\item Da li sažetak sadrži prave podatke o radu?\par
+Sažetak sadrži prave podatke, autori su koncizno i precizno objasnili koje teme su planirali da obrade u radu.
+\item Da li je rad lak-težak za čitanje?\par
+Tema rada sama po sebi nije teška za čitanje, rad je pisan razumljivim jezikom. Sve poteškoće javljale su se usled velikog broja neispravnosti prilikom pisanja i formatiranja rada.
+\item Da li je za razumevanje teksta potrebno predznanje i u kolikoj meri?\par
+Smatram da je potrebno minimalno predznanje vezano za pomenute programske jezike i paradigme kojima pripadaju kako bi čitalac mogao da napravi paralelu između nekadašnjih i trenutnih trendova programiranja.
+\item Da li je u radu navedena odgovarajuća literatura?\par
+Delimično. Literatura koja jeste navedena je odgovarajuća za rad, međutim smatram da je nepotpuna. Postoje delovi u radu koji navode određene biblioteke ili nešto slično, gde je potrebno navesti literaturu za iste.
+\odgovor{Ova primedba je prihvaćena i dodate su reference.}
+\item Da li su u radu reference korektno navedene?\par
+Ne, reference u radu nisu povezane sa tekstom.
+\odgovor{Ova primedba je prihvaćena i u tekstu su dodate reference.}
+\item Da li je struktura rada adekvatna?\par
+Ne, problemi u strukturi su većinski navedeni u prethodnim sekcijama.
+\item Da li rad sadrži sve elemente propisane uslovom seminarskog rada (slike, tabele, broj strana...)?\par
+Ne, rad sadži veći broj slika, međutim ne sadži niti jednu tabelu. Broj strana premašuje propisan broj strana.
+\odgovor{Ova primedba je prihvaćena. Dodate su tabele u sekciji 5 i broj strana je smanjen.}
+\item Da li su slike i tabele funkcionalne i adekvatne?\par
+Ne, svaka referenca na sliku povezana je sa stranom nakon odgovarajuće slike. Veliki problem u tome mogu predstavljati sekcije koje sadrže veći broj slika, dešava se da referenca na jednu sliku vodi ka drugoj slici. Rad ne sadrži tabelu.
+\odgovor{Ova primedba je prihvaćena reference u tekstu referisu na slike. Tabele su dodate.}
+\end{enumerate}
+
+\section{Ocenite sebe}
+% a) ekspert u datoj oblasti
+Ocena sebe: \textbf{b) veoma upućeni u oblast} kojom se ovaj rad bavi. Tema ovog rada jeste nešto sa čime se svakodnevno susrećem kako za potrebe studija, tako i privatno.
+% b) veoma upućeni u oblast
+% c) srednje upućeni
+% d) malo upućeni 
+% e) skoro neupućeni
+% f) potpuno neupućeni
+% Obrazložite svoju odluku
+
+
+
+\chapter{Dodatne izmene}
+%Ovde navedite ukoliko ima izmena koje ste uradili a koje vam recenzenti nisu tražili. 
+
+\end{document}
+
